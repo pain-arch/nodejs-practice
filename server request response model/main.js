@@ -13,14 +13,14 @@ var server=http.createServer(function(req, res){
     }
 
     // About page url
-    else if (req.url=="/") {
+    else if (req.url=="/about") {
         res.writeHead(200,{'content-type':'text/html'})
         res.write('<h1 style={text-align:center} >This is About page</h1>')
         res.end();
     }
     
     // Contct page url
-    else if (req.url=="/") {
+    else if (req.url=="/contact") {
         res.writeHead(200,{'content-type':'text/html'})
         res.write('<h1 style={text-align:center} >This is Contact page</h1>')
         res.end();
